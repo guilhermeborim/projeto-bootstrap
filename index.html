@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Projeto Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <style>
+        .navbar-nav .nav-link.active {
+            color: #fff;
+        }
+        .nav-link {
+            text-align: center;
+        }
+        #produtos {
+            padding-top: 88px;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            z-index: 999;
+        }
+        @media screen and (max-width: 915px) {
+            #produtos {
+                padding-top: 165px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho" class="py-2">
+        <div class="navbar navbar-expand-lg ">
+            <div class="container">
+                <h1>Machado Store</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#imagens">Imagens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#produtos">Produtos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="imagens">
+            <div class="container">
+                <div id="carouselExample" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://media.gazetadopovo.com.br/2019/09/23105248/apple-1stld-writethru-1e850930-dbb6-11e9-ac63-3016711543fe-960x540.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://dropsdejogos.uai.com.br/wp-content/uploads/sites/10/2022/09/divulgacao-apple-reproducao-2-scaled.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://dropsdejogos.uai.com.br/wp-content/uploads/sites/10/2022/03/reproducao-apple-divulgacao-scaled.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="produtos">
+            <div class="container">
+                <h2>Produtos</h2>
+                <div class="container text-center">
+                    <div class="row row-cols-4">
+                        <div class="col-12 col-md-6 col-lg-4 pb-5 col-4">
+                            <div class="card">
+                                <img src="https://a-static.mlcdn.com.br/450x450/smartphone-samsung-galaxy-a14-128gb-preto-4g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp-dual-chip/magazineluiza/236721400/b9989bba2b0e7834907772f4d8b7cacf.jpg" class="card-img-top pt-3" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">R$ 999</h5>
+                                    <p class="card-text">Samsung Galaxy A14 4G</p>
+                                    <a href="#" class="btn btn-primary">Compre Agora!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-12 col-md-6 col-lg-4 pb-5">
+                            <div class="card">
+                                <img src="https://m.media-amazon.com/images/I/41DFmj8m2OL._AC_.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">R$ 850</h5>
+                                    <p class="card-text">Notebook MUltilaser Ultra</p>
+                                    <a href="#" class="btn btn-primary">Compre Agora!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-12 col-md-6 col-lg-4 pb-5">
+                            <div class="card">
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_927624-MLA48700099796_122021-O.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">R$ 1.049</h5>
+                                    <p class="card-text">Smart Tv Philco</p>
+                                    <a href="#" class="btn btn-primary">Compre Agora!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-12 col-md-6 col-lg-4 pb-5 ">
+                            <div class="card">
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_669385-MLB54912741888_042023-O.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">R$ 57</h5>
+                                    <p class="card-text">Relogio Smartwatch Android</p>
+                                    <a href="#" class="btn btn-primary">Compre Agora!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-12 col-md-6 col-lg-4 pb-5">
+                            <div class="card">
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_776537-MLB52804777352_122022-O.webp" class="card-img-top pt-3" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">R$ 24.49</h5>
+                                    <p class="card-text">Capinha de Silicone Premium</p>
+                                    <a href="#" class="btn btn-primary">Compre Agora!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-12 col-md-6 col-lg-4 pb-5">
+                            <div class="card">
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_648785-MLB53021953731_122022-O.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">R$ 49.97</h5>
+                                    <p class="card-text">Fone De Ouvido Bluetooth</p>
+                                    <a href="#" class="btn btn-primary">Compre Agora!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
